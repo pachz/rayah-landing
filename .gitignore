@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# pnpm
+.pnpm-store/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Environment (if you add secrets later)
+.env
+.env.local
+.env.*.local
+
+# Editor (optional — remove if your team commits these)
+.idea/
