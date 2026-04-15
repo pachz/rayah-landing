@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8">
-    <title>Gray HTML Demo - Login</title>
+    <title data-i18n="login.meta.title">Rayah - Login</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="./style.css" rel="stylesheet">
 </head>
@@ -23,7 +23,7 @@
                         <div class="shrink-0 mr-4">
                             <!-- Logo -->
                             <a class="flex items-center justify-center bg-white w-8 h-8 rounded-sm shadow-xs shadow-zinc-950/20" href="index.html">
-                                <img src="./images/logo.png" width="24" height="24" alt="Logo">
+                                <img src="./images/logo.png" width="24" height="24" alt="Logo" data-i18n-attr="alt:common.logoAlt">
                             </a>
                         </div>
             
@@ -33,10 +33,17 @@
                             <!-- Desktop sign in links -->
                             <ul class="flex grow justify-end flex-wrap items-center">
                                 <li>
-                                    <a class="text-sm font-medium text-zinc-500 hover:text-zinc-900 px-3 lg:px-5 py-2 flex items-center transition" href="login.html">Log in</a>
+                                    <a class="text-sm font-medium text-zinc-500 hover:text-zinc-900 px-3 lg:px-5 py-2 flex items-center transition" href="login.html" data-i18n="common.nav.login">Log in</a>
                                 </li>
                                 <li class="ml-1">
-                                    <a class="btn-sm text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow-sm" href="request-demo.html">Request Demo</a>
+                                    <a class="btn-sm text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow-sm" href="request-demo.html" data-i18n="common.nav.requestDemo">Request Demo</a>
+                                </li>
+                                <li class="ml-2">
+                                    <div class="flex items-center text-xs text-zinc-500">
+                                        <button type="button" class="px-1 py-1 hover:text-zinc-900 transition" data-lang-switch="en" aria-pressed="false">EN</button>
+                                        <span>/</span>
+                                        <button type="button" class="px-1 py-1 hover:text-zinc-900 transition" data-lang-switch="ar" aria-pressed="false">AR</button>
+                                    </div>
                                 </li>
                             </ul>
             
@@ -56,7 +63,7 @@
 
                         <!-- Page header -->
                         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-                            <h1 class="font-inter-tight text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-linear-to-r from-zinc-500 via-zinc-900 to-zinc-900">Log in to Gray</h1>
+                            <h1 class="font-inter-tight text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-linear-to-r from-zinc-500 via-zinc-900 to-zinc-900" data-i18n="login.hero.title">Log in to Rayah</h1>
                         </div>
 
                         <!-- Form -->
@@ -65,25 +72,25 @@
                             <form>
                                 <div class="space-y-4">
                                     <div>
-                                        <label class="block text-sm text-zinc-800 font-medium mb-2" for="email">Email</label>
-                                        <input id="email" class="form-input text-sm w-full" type="email" placeholder="mark@acmecorp.com" required />
+                                        <label class="block text-sm text-zinc-800 font-medium mb-2" for="email" data-i18n="login.form.emailLabel">Email</label>
+                                        <input id="email" class="form-input text-sm w-full" type="email" placeholder="mark@acmecorp.com" data-i18n-placeholder="login.form.emailPlaceholder" required />
                                     </div>
                                     <div>
                                         <div class="flex justify-between">
-                                            <label class="block text-sm text-zinc-800 font-medium mb-2" for="password">Password</label>
-                                            <a class="text-sm font-medium text-zinc-500 underline hover:no-underline ml-2" href="reset-password.html">Forgot?</a>
+                                            <label class="block text-sm text-zinc-800 font-medium mb-2" for="password" data-i18n="login.form.passwordLabel">Password</label>
+                                            <a class="text-sm font-medium text-zinc-500 underline hover:no-underline ml-2" href="reset-password.html" data-i18n="login.form.forgotLink">Forgot?</a>
                                         </div>
                                         <input id="password" class="form-input text-sm w-full" type="password" required />
                                     </div>
                                 </div>
                                 <div class="mt-5">
-                                    <button class="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow-sm">Log in</button>
+                                    <button class="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow-sm" data-i18n="login.form.submit">Log in</button>
                                 </div>
                             </form>
                         
                             <!-- Divider -->
                             <div class="flex items-center my-5 before:border-t before:border-zinc-200 before:grow before:mr-3 after:border-t after:border-zinc-200 after:grow after:ml-3">
-                                <div class="text-xs text-zinc-400 italic">Or</div>
+                                <div class="text-xs text-zinc-400 italic" data-i18n="login.social.or">Or</div>
                             </div>
                         
                             <!-- Social login -->
@@ -93,12 +100,13 @@
                                         <path d="M15.679 6.545H8.043v3.273h4.328c-.692 2.182-2.401 2.91-4.363 2.91a4.727 4.727 0 1 1 3.035-8.347l2.378-2.265A8 8 0 1 0 8.008 16c4.41 0 8.4-2.909 7.67-9.455Z" />
                                     </svg>
                                 </div>
-                                <span class="flex-auto pl-3">Continue With Google</span>
+                                <span class="flex-auto pl-3" data-i18n="login.social.google">Continue with Google</span>
                             </button>
                         
                             <div class="text-center mt-6">
                                 <div class="text-xs text-zinc-500">
-                                    By loggin in you agree with our <a class="underline hover:no-underline" href="#0">Terms</a>
+                                    <span data-i18n="login.legal.prefix">By logging in you agree with our</span>
+                                    <a class="underline hover:no-underline" href="#0" data-i18n="common.terms">Terms</a>
                                 </div>
                             </div>
                         
@@ -113,6 +121,7 @@
     </div>
 
     <script src="./js/vendors/alpinejs.min.js" defer></script>
+    <script src="./locales/locales.js"></script>
     <script src="./js/main.js"></script>
 
 </body>

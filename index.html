@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8">
-    <title>Rayah - Home</title>
+    <title data-i18n="home.meta.title">Rayah - Home</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="./style.css" rel="stylesheet">
 </head>
@@ -23,7 +23,7 @@
                         <div class="shrink-0 mr-4">
                             <!-- Logo -->
                             <a class="flex items-center justify-center bg-white w-10 h-8 rounded-sm shadow-xs shadow-zinc-950/20" href="index.html">
-                                <img src="./images/logo.png" width="1563" height="369" alt="Logo">
+                                <img src="./images/logo.png" width="1563" height="369" alt="Logo" data-i18n-attr="alt:common.logoAlt">
                             </a>
                         </div>
             
@@ -33,10 +33,17 @@
                             <!-- Desktop sign in links -->
                             <ul class="flex grow justify-end flex-wrap items-center">
                                 <li>
-                                    <a class="text-sm font-medium text-zinc-500 hover:text-zinc-900 px-3 lg:px-5 py-2 flex items-center transition" href="login.html">Log in</a>
+                                    <a class="text-sm font-medium text-zinc-500 hover:text-zinc-900 px-3 lg:px-5 py-2 flex items-center transition" href="login.html" data-i18n="common.nav.login">Log in</a>
                                 </li>
                                 <li class="ml-1">
-                                    <a class="btn-sm text-zinc-100 bg-rayah-primary-600 hover:bg-zinc-800 w-full shadow-sm" href="request-demo.html">Request Demo</a>
+                                    <a class="btn-sm text-zinc-100 bg-rayah-primary-600 hover:bg-rayah-primary-100 hover:text-white w-full shadow-sm" href="request-demo.html" data-i18n="common.nav.requestDemo">Request Demo</a>
+                                </li>
+                                <li class="ml-2">
+                                    <div class="flex items-center text-xs text-zinc-500">
+                                        <button type="button" class="px-1 py-1 hover:text-zinc-900 transition" data-lang-switch="en" aria-pressed="false">EN</button>
+                                        <span>/</span>
+                                        <button type="button" class="px-1 py-1 hover:text-zinc-900 transition" data-lang-switch="ar" aria-pressed="false">AR</button>
+                                    </div>
                                 </li>
                             </ul>
             
@@ -57,28 +64,28 @@
                     <div class="px-4 sm:px-6">
                         <div class="max-w-3xl mx-auto">
                             <div class="text-center pb-12 md:pb-16">
-                                <h1 class="font-inter-tight text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-linear-to-r from-zinc-500 via-zinc-900 to-zinc-900 pb-4">Grow Your
+                                <h1 class="font-inter-tight text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-linear-to-r from-zinc-500 via-zinc-900 to-zinc-900 pb-4"><span data-i18n="home.hero.titleStart">Grow Your</span>
                                     <em class="italic relative inline-flex justify-center items-center text-zinc-900">
-                                        Restaurant
+                                        <span data-i18n="home.hero.titleEmphasis">Restaurant</span>
                                         <svg class="absolute fill-zinc-300 w-[calc(100%+1rem)] -z-10" xmlns="http://www.w3.org/2000/svg" width="223" height="62" viewBox="0 0 223 62" aria-hidden="true" preserveAspectRatio="none">
                                             <path d="M45.654 53.62c17.666 3.154 35.622 4.512 53.558 4.837 17.94.288 35.91-.468 53.702-2.54 8.89-1.062 17.742-2.442 26.455-4.352 8.684-1.945 17.338-4.3 25.303-7.905 3.94-1.81 7.79-3.962 10.634-6.777 1.38-1.41 2.424-2.994 2.758-4.561.358-1.563-.078-3.143-1.046-4.677-.986-1.524-2.43-2.96-4.114-4.175a37.926 37.926 0 0 0-5.422-3.32c-3.84-1.977-7.958-3.563-12.156-4.933-8.42-2.707-17.148-4.653-25.95-6.145-8.802-1.52-17.702-2.56-26.622-3.333-17.852-1.49-35.826-1.776-53.739-.978-8.953.433-17.898 1.125-26.79 2.22-8.887 1.095-17.738 2.541-26.428 4.616-4.342 1.037-8.648 2.226-12.853 3.676-4.197 1.455-8.314 3.16-12.104 5.363-1.862 1.13-3.706 2.333-5.218 3.829-1.52 1.47-2.79 3.193-3.285 5.113-.528 1.912-.127 3.965.951 5.743 1.07 1.785 2.632 3.335 4.348 4.68 2.135 1.652 3.2 2.672 2.986 3.083-.18.362-1.674.114-4.08-1.638-1.863-1.387-3.63-3.014-4.95-5.09C.94 35.316.424 34.148.171 32.89c-.275-1.253-.198-2.579.069-3.822.588-2.515 2.098-4.582 3.76-6.276 1.673-1.724 3.612-3.053 5.57-4.303 3.96-2.426 8.177-4.278 12.457-5.868 4.287-1.584 8.654-2.89 13.054-4.036 8.801-2.292 17.74-3.925 26.716-5.19C70.777 2.131 79.805 1.286 88.846.723c18.087-1.065 36.236-.974 54.325.397 9.041.717 18.07 1.714 27.042 3.225 8.972 1.485 17.895 3.444 26.649 6.253 4.37 1.426 8.697 3.083 12.878 5.243a42.11 42.11 0 0 1 6.094 3.762c1.954 1.44 3.823 3.2 5.283 5.485a12.515 12.515 0 0 1 1.63 3.88c.164.706.184 1.463.253 2.193-.063.73-.094 1.485-.247 2.195-.652 2.886-2.325 5.141-4.09 6.934-3.635 3.533-7.853 5.751-12.083 7.688-8.519 3.778-17.394 6.09-26.296 7.998-8.917 1.86-17.913 3.152-26.928 4.104-18.039 1.851-36.17 2.295-54.239 1.622-18.062-.713-36.112-2.535-53.824-6.23-5.941-1.31-5.217-2.91.361-1.852" />
                                         </svg>
                                     </em>
-                                    Without the Complexity,
+                                    <span data-i18n="home.hero.titleMiddle">Without the Complexity,</span>
                                     <span class="block mt-3 text-lg md:text-2xl font-semibold text-zinc-700 leading-snug tracking-tight bg-none">
-                                        Simplify Operations. Increase Orders. Scale with Confidence.
+                                        <span data-i18n="home.hero.titleEnd">Simplify Operations. Increase Orders. Scale with Confidence.</span>
                                     </span>
                                  </h1>
                                     
-                                <p class="text-lg text-zinc-500 mb-8">
+                                <p class="text-lg text-zinc-500 mb-8" data-i18n="home.hero.description">
                                     Rayah is a powerful restaurant platform that lets you create menus, launch a custom online branded website, manage orders in real time, and connect seamlessly with your existing POS, so you can run your entire operation in one place.
                                 </p>
                                 <div class="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                                     <div>
-                                        <a class="btn text-zinc-100 bg-rayah-primary-600 hover:bg-zinc-800 w-full shadow-sm" href="request-demo.html">Request Demo</a>
+                                        <a class="btn text-zinc-100 bg-rayah-primary-600 hover:bg-rayah-primary-100 hover:text-white w-full shadow-sm" href="request-demo.html" data-i18n="common.nav.requestDemo">Request Demo</a>
                                     </div>
                                     <div>
-                                        <a class="btn text-zinc-600 bg-white hover:text-zinc-900 w-full shadow-sm" href="#0">Try for Free</a>
+                                        <a class="btn text-zinc-600 bg-white hover:text-zinc-900 w-full shadow-sm" href="#0" data-i18n="common.cta.tryFree">Try for Free</a>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +93,7 @@
                     </div>
                     <!-- Image -->
                     <div class="max-w-6xl mx-auto px-4 sm:px-6 flex justify-center pb-12 md:pb-20 relative before:absolute before:-top-12 before:w-96 before:h-96 before:bg-zinc-900 before:opacity-[.15] before:rounded-full before:blur-3xl before:-z-10">
-                        <img class="rounded-lg shadow-2xl" src="./images/hero-image.png" width="1104" height="620" alt="Hero">
+                        <img class="rounded-lg shadow-2xl" src="./images/hero-image.png" width="1104" height="620" alt="Hero" data-i18n-attr="alt:home.hero.imageAlt">
                     </div>                    
                 </div>
             </section>
@@ -96,8 +103,8 @@
                 <div class="py-12 md:py-20">
                     <div class="max-w-6xl mx-auto px-4 sm:px-6">
                         <div class="max-w-3xl mx-auto text-center pb-12">
-                            <h2 class="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Everything Your Restaurant Needs,<br> In One Platform</h2>
-                            <p class="text-lg text-zinc-500">Rayah combines powerful back-office tools with a seamless customer-facing experience. Manage your operations, sync with your current systems, and offer modern online ordering, without complexity.</p>
+                            <h2 class="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4"><span data-i18n="home.platform.title">Everything Your Restaurant Needs,</span><br> <span data-i18n="home.platform.titleLine2">In One Platform</span></h2>
+                            <p class="text-lg text-zinc-500" data-i18n="home.platform.description">Rayah combines powerful back-office tools with a seamless customer-facing experience. Manage your operations, sync with your current systems, and offer modern online ordering, without complexity.</p>
                         </div>
                         <div x-data="{ tab: '1' }">
                             <!-- Tabs buttons -->
@@ -108,12 +115,12 @@
                                     @click.prevent="tab = '1'"
                                 >
                                     <div class="flex items-center justify-between mb-1">
-                                        <div class="font-inter-tight font-semibold text-zinc-900">Public Restaurant Website</div>
+                                        <div class="font-inter-tight font-semibold text-zinc-900" data-i18n="home.platform.tabs.public.title">Public Restaurant Website</div>
                                         <svg :class="tab !== '1' ? 'hidden' : ''" class="fill-zinc-400 shrink-0 ml-2" xmlns="http://www.w3.org/2000/svg" width="10" height="10">
                                             <path d="M8.667.186H2.675a.999.999 0 0 0 0 1.998h3.581L.971 7.469a.999.999 0 1 0 1.412 1.412l5.285-5.285v3.58a.999.999 0 1 0 1.998 0V1.186a.999.999 0 0 0-.999-.999Z" />
                                         </svg>
                                     </div>
-                                    <div class="text-sm text-zinc-500">A custom website for your brand that lets customers browse and place orders.</div>
+                                    <div class="text-sm text-zinc-500" data-i18n="home.platform.tabs.public.description">A custom website for your brand that lets customers browse and place orders.</div>
                                 </button>
                                 <button
                                     :class="tab !== '2' ? 'bg-zinc-100 opacity-60 hover:opacity-100 transition' : '[background:linear-gradient(var(--color-white),var(--color-white))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] shadow-xs rotate-1'"
@@ -121,12 +128,12 @@
                                     @click.prevent="tab = '2'"
                                 >
                                     <div class="flex items-center justify-between mb-1">
-                                        <div class="font-inter-tight font-semibold text-zinc-900">Restaurant Admin Panel</div>
+                                        <div class="font-inter-tight font-semibold text-zinc-900" data-i18n="home.platform.tabs.admin.title">Restaurant Admin Panel</div>
                                         <svg :class="tab !== '2' ? 'hidden' : ''" class="fill-zinc-400 shrink-0 ml-2" xmlns="http://www.w3.org/2000/svg" width="10" height="10">
                                             <path d="M8.667.186H2.675a.999.999 0 0 0 0 1.998h3.581L.971 7.469a.999.999 0 1 0 1.412 1.412l5.285-5.285v3.58a.999.999 0 1 0 1.998 0V1.186a.999.999 0 0 0-.999-.999Z" />
                                         </svg>
                                     </div>
-                                    <div class="text-sm text-zinc-500">A centralized system to manage branches, menus, orders, customers, and operations.</div>
+                                    <div class="text-sm text-zinc-500" data-i18n="home.platform.tabs.admin.description">A centralized system to manage branches, menus, orders, customers, and operations.</div>
                                 </button>
                                 <button
                                     :class="tab !== '3' ? 'bg-zinc-100 opacity-60 hover:opacity-100 transition' : '[background:linear-gradient(var(--color-white),var(--color-white))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] shadow-xs rotate-1'"
@@ -134,12 +141,12 @@
                                     @click.prevent="tab = '3'"
                                 >
                                     <div class="flex items-center justify-between mb-1">
-                                        <div class="font-inter-tight font-semibold text-zinc-900">Integration Layer</div>
+                                        <div class="font-inter-tight font-semibold text-zinc-900" data-i18n="home.platform.tabs.integration.title">Integration Layer</div>
                                         <svg :class="tab !== '3' ? 'hidden' : ''" class="fill-zinc-400 shrink-0 ml-2" xmlns="http://www.w3.org/2000/svg" width="10" height="10">
                                             <path d="M8.667.186H2.675a.999.999 0 0 0 0 1.998h3.581L.971 7.469a.999.999 0 1 0 1.412 1.412l5.285-5.285v3.58a.999.999 0 1 0 1.998 0V1.186a.999.999 0 0 0-.999-.999Z" />
                                         </svg>
                                     </div>
-                                    <div class="text-sm text-zinc-500">Connect seamlessly with POS, delivery, and analytics tools without disrupting systems.</div>
+                                    <div class="text-sm text-zinc-500" data-i18n="home.platform.tabs.integration.description">Connect seamlessly with POS, delivery, and analytics tools without disrupting systems.</div>
                                 </button>
                             </div>
                             <!-- Tabs items -->
@@ -205,8 +212,8 @@
                 <div class="py-12 md:py-20">
                     <div class="max-w-6xl mx-auto px-4 sm:px-6">
                         <div class="relative max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                            <h2 class="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Public Restaurant Website</h2>
-                            <p class="text-lg text-zinc-500">Create a fully branded restaurant website where customers browse menus, place orders, manage accounts, and enjoy a seamless digital ordering experience anytime.</p>
+                            <h2 class="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4" data-i18n="home.publicWebsite.title">Public Restaurant Website</h2>
+                            <p class="text-lg text-zinc-500" data-i18n="home.publicWebsite.description">Create a fully branded restaurant website where customers browse menus, place orders, manage accounts, and enjoy a seamless digital ordering experience anytime.</p>
                         </div>
                         <div class="max-w-xs mx-auto sm:max-w-none grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-4 lg:gap-8">
                             <article class="sm:col-span-2 flex flex-col border border-transparent [background:linear-gradient(var(--color-white),var(--color-zinc-50))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] rounded-lg">
@@ -215,9 +222,9 @@
                                         <svg class="inline-flex fill-zinc-400" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                                             <path d="M17 9c.6 0 1 .4 1 1v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h6c.6 0 1 .4 1 1s-.4 1-1 1H4v12h12v-6c0-.6.4-1 1-1Zm-.7-6.7c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-8 8c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l8-8Z" />
                                         </svg>
-                                        <h3 class="font-inter-tight font-semibold text-zinc-900">Online Menu Browsing</h3>
+                                        <h3 class="font-inter-tight font-semibold text-zinc-900" data-i18n="home.publicWebsite.cards.menuBrowsing.title">Online Menu Browsing</h3>
                                     </div>
-                                    <p class="grow max-w-md text-sm text-zinc-500">Let customers explore your full menu with categories, images, and detailed item descriptions.</p>
+                                    <p class="grow max-w-md text-sm text-zinc-500" data-i18n="home.publicWebsite.cards.menuBrowsing.description">Let customers explore your full menu with categories, images, and detailed item descriptions.</p>
                                 </div>
                                 <figure>
                                     <img class="h-[280px] object-cover object-left mx-auto sm:object-contain sm:h-auto" src="./images/public_site01.png" width="721" height="280" alt="Feature Post 01">
@@ -229,12 +236,12 @@
                                         <svg class="inline-flex fill-zinc-400" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                                             <path d="m6.035 17.335-4-14c-.2-.8.5-1.5 1.3-1.3l14 4c.9.3 1 1.5.1 1.9l-6.6 2.9-2.8 6.6c-.5.9-1.7.8-2-.1Zm-1.5-12.8 2.7 9.5 1.9-4.4c.1-.2.3-.4.5-.5l4.4-1.9-9.5-2.7Z" />
                                         </svg>
-                                        <h3 class="font-inter-tight font-semibold text-zinc-900">Customer Accounts & Profiles</h3>
+                                        <h3 class="font-inter-tight font-semibold text-zinc-900" data-i18n="home.publicWebsite.cards.customerAccounts.title">Customer Accounts & Profiles</h3>
                                     </div>
-                                    <p class="grow max-w-md text-sm text-zinc-500">Allow users to manage their details, track orders, and reorder past meals effortlessly..</p>
+                                    <p class="grow max-w-md text-sm text-zinc-500" data-i18n="home.publicWebsite.cards.customerAccounts.description">Allow users to manage their details, track orders, and reorder past meals effortlessly.</p>
                                 </div>
                                 <figure>
-                                    <img class="h-[280px] object-cover object-left mx-auto sm:object-contain sm:h-auto" src="./images/feature-post-02.png" width="342" height="280" alt="Feature Post 02">
+                                    <img class="h-[280px] object-cover object-left mx-auto sm:object-contain sm:h-auto" src="./images/public_site02.png" width="342" height="280" alt="Feature Post 02">
                                 </figure>
                             </article>
 
@@ -244,9 +251,9 @@
                                         <svg class="inline-flex fill-zinc-400" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                                             <path d="m6.035 17.335-4-14c-.2-.8.5-1.5 1.3-1.3l14 4c.9.3 1 1.5.1 1.9l-6.6 2.9-2.8 6.6c-.5.9-1.7.8-2-.1Zm-1.5-12.8 2.7 9.5 1.9-4.4c.1-.2.3-.4.5-.5l4.4-1.9-9.5-2.7Z" />
                                         </svg>
-                                        <h3 class="font-inter-tight font-semibold text-zinc-900">Menu Item Customization & Add-ons</h3>
+                                        <h3 class="font-inter-tight font-semibold text-zinc-900" data-i18n="home.publicWebsite.cards.customization.title">Menu Item Customization & Add-ons</h3>
                                     </div>
-                                    <p class="grow max-w-md text-sm text-zinc-500">Let customers customize items with add-ons, variations, limits, and dynamic pricing.</p>
+                                    <p class="grow max-w-md text-sm text-zinc-500" data-i18n="home.publicWebsite.cards.customization.description">Let customers customize items with add-ons, variations, limits, and dynamic pricing.</p>
                                 </div>
                                 <figure>
                                     <img class="h-[280px] object-cover object-left mx-auto sm:object-contain sm:h-auto" src="./images/public_site033.png" width="342" height="280" alt="Feature Post 02">
@@ -258,9 +265,9 @@
                                         <svg class="inline-flex fill-zinc-400" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                                             <path d="M17 9c.6 0 1 .4 1 1v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h6c.6 0 1 .4 1 1s-.4 1-1 1H4v12h12v-6c0-.6.4-1 1-1Zm-.7-6.7c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-8 8c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l8-8Z" />
                                         </svg>
-                                        <h3 class="font-inter-tight font-semibold text-zinc-900">Easy Online Ordering & Order Management</h3>
+                                        <h3 class="font-inter-tight font-semibold text-zinc-900" data-i18n="home.publicWebsite.cards.orderManagement.title">Easy Online Ordering & Order Management</h3>
                                     </div>
-                                    <p class="grow max-w-md text-sm text-zinc-500">Enable fast and intuitive ordering for pickup or delivery in just a few clicks.</p>
+                                    <p class="grow max-w-md text-sm text-zinc-500" data-i18n="home.publicWebsite.cards.orderManagement.description">Enable fast and intuitive ordering for pickup or delivery in just a few clicks.</p>
                                 </div>
                                 <figure>
                                     <img class="h-[280px] object-cover object-left mx-auto sm:object-contain sm:h-auto" src="./images/public_site04.png" width="721" height="280" alt="Feature Post 01">
@@ -327,9 +334,9 @@
                             <!-- Content -->
                             <div class="lg:max-w-none lg:min-w-[524px]">
                                 <div class="mb-8">
-                                    <div class="inline-flex text-sm font-medium text-zinc-400 px-4 py-0.5 border border-transparent [background:linear-gradient(var(--color-zinc-800),var(--color-zinc-800))_padding-box,linear-gradient(120deg,var(--color-zinc-700),--theme(--color-zinc-700/0),var(--color-zinc-700))_border-box] rounded-full mb-4">Back Office</div>
-                                    <h3 class="font-inter-tight text-3xl font-bold text-zinc-200 mb-4">Restaurant Admin Panel</h3>
-                                    <p class="text-lg text-zinc-500">Take full control of your restaurant operations from a single dashboard.
+                                    <div class="inline-flex text-sm font-medium text-zinc-400 px-4 py-0.5 border border-transparent [background:linear-gradient(var(--color-zinc-800),var(--color-zinc-800))_padding-box,linear-gradient(120deg,var(--color-zinc-700),--theme(--color-zinc-700/0),var(--color-zinc-700))_border-box] rounded-full mb-4" data-i18n="home.backOffice.badge">Back Office</div>
+                                    <h3 class="font-inter-tight text-3xl font-bold text-zinc-200 mb-4" data-i18n="home.backOffice.title">Restaurant Admin Panel</h3>
+                                    <p class="text-lg text-zinc-500" data-i18n="home.backOffice.description">Take full control of your restaurant operations from a single dashboard.
                                     </p>
                                 </div>
                                 <!-- Tabs buttons -->
@@ -343,8 +350,8 @@
                                             <path d="m7.951 14.537 6.296-7.196 1.506 1.318-7.704 8.804-3.756-3.756 1.414-1.414 2.244 2.244Zm11.296-7.196 1.506 1.318-7.704 8.804-1.756-1.756 1.414-1.414.244.244 6.296-7.196Z" />
                                         </svg>
                                         <div>
-                                            <div class="font-inter-tight text-lg font-semibold text-zinc-200 mb-1">Order Management</div>
-                                            <div class="text-zinc-500">Track, update, and manage all orders in real time with flexible status workflows and filtering.</div>
+                                            <div class="font-inter-tight text-lg font-semibold text-zinc-200 mb-1" data-i18n="home.backOffice.tabs.orders.title">Order Management</div>
+                                            <div class="text-zinc-500" data-i18n="home.backOffice.tabs.orders.description">Track, update, and manage all orders in real time with flexible status workflows and filtering.</div>
                                         </div>
                                     </button>
                                     <button
@@ -356,8 +363,8 @@
                                             <path d="m16.997 19.056-1.78-.912A13.91 13.91 0 0 0 16.75 11.8c0-2.206-.526-4.38-1.533-6.344l1.78-.912A15.91 15.91 0 0 1 18.75 11.8c0 2.524-.602 5.01-1.753 7.256Zm-3.616-1.701-1.77-.93A9.944 9.944 0 0 0 12.75 11.8c0-1.611-.39-3.199-1.14-4.625l1.771-.93c.9 1.714 1.37 3.62 1.369 5.555 0 1.935-.47 3.841-1.369 5.555Zm-3.626-1.693-1.75-.968c.49-.885.746-1.881.745-2.895a5.97 5.97 0 0 0-.745-2.893l1.75-.968a7.968 7.968 0 0 1 .995 3.861 7.97 7.97 0 0 1-.995 3.863Zm-3.673-1.65-1.664-1.11c.217-.325.333-.709.332-1.103 0-.392-.115-.776-.332-1.102L6.082 9.59c.437.655.67 1.425.668 2.21a3.981 3.981 0 0 1-.668 2.212Z" />
                                         </svg>
                                         <div>
-                                            <div class="font-inter-tight text-lg font-semibold text-zinc-200 mb-1">Menu Management</div>
-                                            <div class="text-zinc-500">Create, edit, and organize menu items, categories, and add-ons with complete control and flexibility easily.</div>
+                                            <div class="font-inter-tight text-lg font-semibold text-zinc-200 mb-1" data-i18n="home.backOffice.tabs.menu.title">Menu Management</div>
+                                            <div class="text-zinc-500" data-i18n="home.backOffice.tabs.menu.description">Create, edit, and organize menu items, categories, and add-ons with complete control and flexibility easily.</div>
                                         </div>
                                     </button>
                                     <button
@@ -369,8 +376,8 @@
                                             <path d="m11.293 5.293 1.414 1.414-8 8-1.414-1.414 8-8Zm7-1 1.414 1.414-8 8-1.414-1.414 8-8Zm0 6 1.414 1.414-8 8-1.414-1.414 8-8Z" />
                                         </svg>
                                         <div>
-                                            <div class="font-inter-tight text-lg font-semibold text-zinc-200 mb-1">Multi-Branch Management</div>
-                                            <div class="text-zinc-500">Manage multiple branches centrally, each with own settings, menus, and operations in a unified system.</div>
+                                            <div class="font-inter-tight text-lg font-semibold text-zinc-200 mb-1" data-i18n="home.backOffice.tabs.branches.title">Multi-Branch Management</div>
+                                            <div class="text-zinc-500" data-i18n="home.backOffice.tabs.branches.description">Manage multiple branches centrally, each with own settings, menus, and operations in a unified system.</div>
                                         </div>
                                     </button>
                                 </div>
@@ -426,7 +433,7 @@
                                     </div>
                                 </div>
                                 <!-- Gear illustration -->
-                                <img class="absolute left-0 bottom-0 -translate-x-1/2 translate-y-1/3 mix-blend-exclusion max-lg:w-32" src="./images/features-illustration.png" alt="Features 02 illustration" width="173" height="167" aria-hidden="true">
+                                <img class="features-illustration absolute left-0 bottom-0 -translate-x-1/2 translate-y-1/3 mix-blend-exclusion max-lg:w-32" src="./images/features-illustration.png" alt="Features 02 illustration" width="173" height="167" aria-hidden="true">
                             </div>
                         
                         </div>
@@ -441,9 +448,9 @@
                                     <svg class="fill-zinc-400 mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                                         <path d="M15 9a1 1 0 0 1 0 2c-.441 0-1.243.92-1.89 1.716.319 1.005.529 1.284.89 1.284a1 1 0 0 1 0 2 2.524 2.524 0 0 1-2.339-1.545A3.841 3.841 0 0 1 9 16a1 1 0 0 1 0-2c.441 0 1.243-.92 1.89-1.716C10.57 11.279 10.361 11 10 11a1 1 0 0 1 0-2 2.524 2.524 0 0 1 2.339 1.545A3.841 3.841 0 0 1 15 9Zm-5-1H7.51l-.02.142C6.964 11.825 6.367 16 3 16a3 3 0 0 1-3-3 1 1 0 0 1 2 0 1 1 0 0 0 1 1c1.49 0 1.984-2.48 2.49-6H3a1 1 0 1 1 0-2h2.793c.52-3.1 1.4-6 4.207-6a3 3 0 0 1 3 3 1 1 0 0 1-2 0 1 1 0 0 0-1-1C8.808 2 8.257 3.579 7.825 6H10a1 1 0 0 1 0 2Z" />
                                     </svg>
-                                    <h3 class="font-inter-tight font-semibold text-zinc-200">Dashboard & Analytics</h3>
+                                <h3 class="font-inter-tight font-semibold text-zinc-200" data-i18n="home.backOffice.blocks.analytics.title">Dashboard & Analytics</h3>
                                 </div>
-                                <p class="text-sm text-zinc-500">Gain actionable insights with real-time dashboards, performance metrics, and detailed reports for smarter decisions.</p>
+                                <p class="text-sm text-zinc-500" data-i18n="home.backOffice.blocks.analytics.description">Gain actionable insights with real-time dashboards, performance metrics, and detailed reports for smarter decisions.</p>
                             </div>
                             <!-- Block #2 -->
                             <div>
@@ -451,9 +458,9 @@
                                     <svg class="fill-zinc-400 mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                                         <path d="M13 16c-.153 0-.306-.035-.447-.105l-3.851-1.926c-.231.02-.465.031-.702.031-4.411 0-8-3.14-8-7s3.589-7 8-7 8 3.14 8 7c0 1.723-.707 3.351-2 4.63V15a1.003 1.003 0 0 1-1 1Zm-4.108-4.054c.155 0 .308.036.447.105L12 13.382v-2.187c0-.288.125-.562.341-.752C13.411 9.506 14 8.284 14 7c0-2.757-2.691-5-6-5S2 4.243 2 7s2.691 5 6 5c.266 0 .526-.02.783-.048a1.01 1.01 0 0 1 .109-.006Z" />
                                     </svg>
-                                    <h3 class="font-inter-tight font-semibold text-zinc-200">Delivery Integration</h3>
+                                <h3 class="font-inter-tight font-semibold text-zinc-200" data-i18n="home.backOffice.blocks.delivery.title">Delivery Integration</h3>
                                 </div>
-                                <p class="text-sm text-zinc-500">Connect with third-party delivery services to automate order dispatch and streamline last-mile delivery operations.</p>
+                                <p class="text-sm text-zinc-500" data-i18n="home.backOffice.blocks.delivery.description">Connect with third-party delivery services to automate order dispatch and streamline last-mile delivery operations.</p>
                             </div>
                             <!-- Block #3 -->
                             <div>
@@ -461,9 +468,9 @@
                                     <svg class="fill-zinc-400 mr-2" xmlns="http://www.w3.org/2000/svg" width="14" height="16">
                                         <path d="M13 0H1C.4 0 0 .4 0 1v14c0 .6.4 1 1 1h8l5-5V1c0-.6-.4-1-1-1ZM2 2h10v8H8v4H2V2Z" />
                                     </svg>
-                                    <h3 class="font-inter-tight font-semibold text-zinc-200">POS Integration</h3>
+                                <h3 class="font-inter-tight font-semibold text-zinc-200" data-i18n="home.backOffice.blocks.pos.title">POS Integration</h3>
                                 </div>
-                                <p class="text-sm text-zinc-500">Seamlessly connect with existing POS systems to synchronize orders, ensuring consistent workflows without disruption.</p>
+                                <p class="text-sm text-zinc-500" data-i18n="home.backOffice.blocks.pos.description">Seamlessly connect with existing POS systems to synchronize orders, ensuring consistent workflows without disruption.</p>
                             </div>
                             <!-- Block #4 -->
                             <div>
@@ -471,9 +478,9 @@
                                     <svg class="fill-zinc-400 mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                                         <path d="M7 14c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7ZM7 2C4.243 2 2 4.243 2 7s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5Zm8.707 12.293a.999.999 0 1 1-1.414 1.414L11.9 13.314a8.019 8.019 0 0 0 1.414-1.414l2.393 2.393Z" />
                                     </svg>
-                                    <h3 class="font-inter-tight font-semibold text-zinc-200">Customer Management</h3>
+                                <h3 class="font-inter-tight font-semibold text-zinc-200" data-i18n="home.backOffice.blocks.customers.title">Customer Management</h3>
                                 </div>
-                                <p class="text-sm text-zinc-500">Maintain customer profiles, track order history, and build relationships through centralized customer data and insights.</p>
+                                <p class="text-sm text-zinc-500" data-i18n="home.backOffice.blocks.customers.description">Maintain customer profiles, track order history, and build relationships through centralized customer data and insights.</p>
                             </div>
                             <!-- Block #5 -->
                             <div>
@@ -481,9 +488,9 @@
                                     <svg class="fill-zinc-400 mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                                         <path d="M14.6.085 8 2.885 1.4.085c-.5-.2-1.4-.1-1.4.9v11c0 .4.2.8.6.9l7 3c.3.1.5.1.8 0l7-3c.4-.2.6-.5.6-.9v-11c0-1-.9-1.1-1.4-.9ZM2 2.485l5 2.1v8.8l-5-2.1v-8.8Zm12 8.8-5 2.1v-8.7l5-2.1v8.7Z" />
                                     </svg>
-                                    <h3 class="font-inter-tight font-semibold text-zinc-200">User Roles & Permissions</h3>
+                                <h3 class="font-inter-tight font-semibold text-zinc-200" data-i18n="home.backOffice.blocks.roles.title">User Roles & Permissions</h3>
                                 </div>
-                                <p class="text-sm text-zinc-500">Control access with customizable roles, ensuring secure, structured team collaboration and operation management across the platform.</p>
+                                <p class="text-sm text-zinc-500" data-i18n="home.backOffice.blocks.roles.description">Control access with customizable roles, ensuring secure, structured team collaboration and operation management across the platform.</p>
                             </div>
                             <!-- Block #6 -->
                             <div>
@@ -491,13 +498,76 @@
                                     <svg class="fill-zinc-400 mr-2" xmlns="http://www.w3.org/2000/svg" width="14" height="16">
                                         <path d="M13 14a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2h12Zm-6.707-2.293-5-5a1 1 0 0 1 1.414-1.414L6 8.586V1a1 1 0 1 1 2 0v7.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-5 5a1 1 0 0 1-1.414 0Z" />
                                     </svg>
-                                    <h3 class="font-inter-tight font-semibold text-zinc-200">Inventory Management</h3>
+                                <h3 class="font-inter-tight font-semibold text-zinc-200" data-i18n="home.backOffice.blocks.inventory.title">Inventory Management</h3>
                                 </div>
-                                <p class="text-sm text-zinc-500">Track stock levels, monitor ingredient usage, and receive alerts to prevent shortages and optimize purchasing decisions.</p>
+                                <p class="text-sm text-zinc-500" data-i18n="home.backOffice.blocks.inventory.description">Track stock levels, monitor ingredient usage, and receive alerts to prevent shortages and optimize purchasing decisions.</p>
                             </div>
                         </div>
                     </div>
 
+                </div>
+            </section>
+
+            <!-- Integrations -->
+            <section>
+                <div class="py-12 md:py-20">
+                    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                        <div class="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+                            <!-- <div class="inline-flex text-sm font-medium px-10 py-2 rounded-full mb-5" style="background-color: var(--color-rayah-primary-600); color: var(--color-white);">Integration Layer</div> -->
+                            <div class="inline-flex text-sm font-medium text-zinc-100 px-4 py-0.5 rounded-full mb-4 bg-rayah-primary-600" data-i18n="home.integrations.badge">Integration Layer</div>
+
+                            <h2 class="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4" data-i18n="home.integrations.title">Connect Everything Without Changing Anything</h2>
+                            <p class="text-lg text-zinc-500" data-i18n="home.integrations.description">Rayah integrates with your existing tools to keep operations smooth, connected, and scalable.</p>
+                        </div>
+
+                        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-12 md:mb-16">
+                            <article class="h-full flex flex-col border border-transparent [background:linear-gradient(var(--color-white),var(--color-zinc-50))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] rounded-lg p-6">
+                                <div class="w-10 h-10 rounded-full bg-zinc-100 text-zinc-700 flex items-center justify-center mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="fill-current">
+                                        <path d="M9 0a9 9 0 1 0 9 9A9.01 9.01 0 0 0 9 0Zm0 2a7 7 0 0 1 5.66 11.11l-1.24-1.24A5 5 0 1 0 4.13 9.9l-1.24 1.24A7 7 0 0 1 9 2Zm0 5a2 2 0 1 1-2 2 2 2 0 0 1 2-2Z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-inter-tight text-xl font-semibold text-zinc-900 mb-2" data-i18n="home.integrations.cards.pos.title">POS Integration</h3>
+                                <p class="text-zinc-500" data-i18n="home.integrations.cards.pos.description">Sync orders with your existing POS system in real-time without disrupting your current workflow.</p>
+                            </article>
+
+                            <article class="h-full flex flex-col border border-transparent [background:linear-gradient(var(--color-white),var(--color-zinc-50))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] rounded-lg p-6">
+                                <div class="w-10 h-10 rounded-full bg-zinc-100 text-zinc-700 flex items-center justify-center mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="fill-current">
+                                        <path d="M14 2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2ZM4 4h10v2H4V4Zm0 4h3v6H4V8Zm5 0h5v6H9V8Z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-inter-tight text-xl font-semibold text-zinc-900 mb-2" data-i18n="home.integrations.cards.payment.title">Payment Gateways</h3>
+                                <p class="text-zinc-500" data-i18n="home.integrations.cards.payment.description">Accept secure online payments through trusted providers with fast, reliable transaction processing.</p>
+                            </article>
+
+                            <article class="h-full flex flex-col border border-transparent [background:linear-gradient(var(--color-white),var(--color-zinc-50))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] rounded-lg p-6">
+                                <div class="w-10 h-10 rounded-full bg-zinc-100 text-zinc-700 flex items-center justify-center mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="fill-current">
+                                        <path d="M9 0a3 3 0 0 0-3 3v2H5a3 3 0 0 0-3 3v3a3 3 0 0 0 3 3h1v2a3 3 0 0 0 6 0v-2h1a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3h-1V3a3 3 0 0 0-3-3Zm1 16a1 1 0 1 1-2 0v-2h2v2Zm3-5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v3Z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-inter-tight text-xl font-semibold text-zinc-900 mb-2" data-i18n="home.integrations.cards.delivery.title">Delivery Services</h3>
+                                <p class="text-zinc-500" data-i18n="home.integrations.cards.delivery.description">Automatically send orders to delivery partners and track status updates without manual coordination.</p>
+                            </article>
+
+                            <article class="h-full flex flex-col border border-transparent [background:linear-gradient(var(--color-white),var(--color-zinc-50))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] rounded-lg p-6">
+                                <div class="w-10 h-10 rounded-full bg-zinc-100 text-zinc-700 flex items-center justify-center mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="fill-current">
+                                        <path d="M2 2h2v14H2V2Zm12 0h2v14h-2V2ZM6 10h2v6H6v-6Zm4-4h2v10h-2V6ZM6 2h6v2H6V2Z" />
+                                    </svg>
+                                </div>
+                                <h3 class="font-inter-tight text-xl font-semibold text-zinc-900 mb-2" data-i18n="home.integrations.cards.analytics.title">Analytics &amp; Tracking</h3>
+                                <p class="text-zinc-500" data-i18n="home.integrations.cards.analytics.description">Connect with analytics tools to monitor performance, customer behavior, and business growth.</p>
+                            </article>
+                        </div>
+
+                        <div class="max-w-3xl mx-auto text-center mt-20 md:mt-24 px-2 sm:px-0">
+                            <p class="inline-block text-sm md:text-base leading-relaxed font-medium rounded-full px-6 sm:px-8 py-3 border text-zinc-700 bg-zinc-50 border-zinc-300">
+                                <span data-i18n="home.integrations.caption">Works with your favorite tools, so you never have to start from scratch.</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -506,7 +576,7 @@
                 <div class="py-12 md:py-20">
                     <div class="max-w-6xl mx-auto px-4 sm:px-6">
                         <div class="relative max-w-3xl mx-auto text-center pb-12">
-                            <h2 class="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">FAQ</h2>
+                            <h2 class="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4" data-i18n="home.faq.title">FAQ</h2>
                             <!-- <p class="text-lg text-zinc-500">Start creating realtime design experiences for free. Upgrade for extra features and collaboration with your team.</p> -->
                         </div>
 
@@ -526,7 +596,7 @@
                                             :aria-expanded="expanded"
                                             aria-controls="faqs-text-01"
                                         >
-                                            <span>What is Rayah?</span>
+                                            <span data-i18n="home.faq.items.item1.question">What is Rayah?</span>
                                             <svg class="fill-zinc-400 shrink-0 ml-8" width="12" height="12" xmlns="http://www.w3.org/2000/svg">
                                                 <rect y="5" width="12" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'rotate-180!': expanded}" />
                                                 <rect y="5" width="12" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'rotate-180!': expanded}" />
@@ -542,7 +612,7 @@
                                         >
                                         <div class="overflow-hidden">
                                             <p class="px-4 pb-3">
-                                                Rayah is an all-in-one restaurant management platform that connects your admin panel, website, and existing POS system seamlessly.
+                                                <span data-i18n="home.faq.items.item1.answer">Rayah is an all-in-one restaurant management platform that connects your admin panel, website, and existing POS system seamlessly.</span>
                                             </p>
                                         </div>
                                     </div>
@@ -557,7 +627,7 @@
                                             :aria-expanded="expanded"
                                             aria-controls="faqs-text-02"
                                         >
-                                            <span>Do I need to replace my current POS system?</span>
+                                            <span data-i18n="home.faq.items.item2.question">Do I need to replace my current POS system?</span>
                                             <svg class="fill-zinc-400 shrink-0 ml-8" width="12" height="12" xmlns="http://www.w3.org/2000/svg">
                                                 <rect y="5" width="12" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'rotate-180!': expanded}" />
                                                 <rect y="5" width="12" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'rotate-180!': expanded}" />
@@ -573,7 +643,7 @@
                                         >
                                         <div class="overflow-hidden">
                                             <p class="px-4 pb-3">
-                                                No. Rayah is designed to integrate with your existing POS system, not replace it, allowing both to work in parallel.
+                                                <span data-i18n="home.faq.items.item2.answer">No. Rayah is designed to integrate with your existing POS system, not replace it, allowing both to work in parallel.</span>
                                             </p>
                                         </div>
                                     </div>
@@ -588,7 +658,7 @@
                                             :aria-expanded="expanded"
                                             aria-controls="faqs-text-03"
                                         >
-                                            <span>Can I manage multiple branches with Rayah?</span>
+                                            <span data-i18n="home.faq.items.item3.question">Can I manage multiple branches with Rayah?</span>
                                             <svg class="fill-zinc-400 shrink-0 ml-8" width="12" height="12" xmlns="http://www.w3.org/2000/svg">
                                                 <rect y="5" width="12" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'rotate-180!': expanded}" />
                                                 <rect y="5" width="12" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'rotate-180!': expanded}" />
@@ -604,7 +674,7 @@
                                         >
                                         <div class="overflow-hidden">
                                             <p class="px-4 pb-3">
-                                                Yes. You can create and manage multiple branches, each with its own menu, settings, and operational control.
+                                                <span data-i18n="home.faq.items.item3.answer">Yes. You can create and manage multiple branches, each with its own menu, settings, and operational control.</span>
                                             </p>
                                         </div>
                                     </div>
@@ -619,7 +689,7 @@
                                             :aria-expanded="expanded"
                                             aria-controls="faqs-text-04"
                                         >
-                                            <span>Does Rayah support online ordering?</span>
+                                            <span data-i18n="home.faq.items.item4.question">Does Rayah support online ordering?</span>
                                             <svg class="fill-zinc-400 shrink-0 ml-8" width="12" height="12" xmlns="http://www.w3.org/2000/svg">
                                                 <rect y="5" width="12" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'rotate-180!': expanded}" />
                                                 <rect y="5" width="12" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'rotate-180!': expanded}" />
@@ -635,7 +705,7 @@
                                         >
                                         <div class="overflow-hidden">
                                             <p class="px-4 pb-3">
-                                                Yes. Rayah provides a fully branded public website where customers can browse menus and place orders online.
+                                                <span data-i18n="home.faq.items.item4.answer">Yes. Rayah provides a fully branded public website where customers can browse menus and place orders online.</span>
                                             </p>
                                         </div>
                                     </div>
@@ -650,7 +720,7 @@
                                             :aria-expanded="expanded"
                                             aria-controls="faqs-text-05"
                                         >
-                                            <span>How are orders handled in the system?</span>
+                                            <span data-i18n="home.faq.items.item5.question">How are orders handled in the system?</span>
                                             <svg class="fill-zinc-400 shrink-0 ml-8" width="12" height="12" xmlns="http://www.w3.org/2000/svg">
                                                 <rect y="5" width="12" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'rotate-180!': expanded}" />
                                                 <rect y="5" width="12" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'rotate-180!': expanded}" />
@@ -666,7 +736,7 @@
                                         >
                                         <div class="overflow-hidden">
                                             <p class="px-4 pb-3">
-                                                Orders appear instantly in a Kanban-style board in your admin panel, where you can track and update their status in real time.
+                                                <span data-i18n="home.faq.items.item5.answer">Orders appear instantly in a Kanban-style board in your admin panel, where you can track and update their status in real time.</span>
                                             </p>
                                         </div>
                                     </div>
@@ -681,7 +751,7 @@
                                             :aria-expanded="expanded"
                                             aria-controls="faqs-text-06"
                                         >
-                                            <span>Can I customize my restaurant’s branding?</span>
+                                            <span data-i18n="home.faq.items.item6.question">Can I customize my restaurant’s branding?</span>
                                             <svg class="fill-zinc-400 shrink-0 ml-8" width="12" height="12" xmlns="http://www.w3.org/2000/svg">
                                                 <rect y="5" width="12" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'rotate-180!': expanded}" />
                                                 <rect y="5" width="12" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'rotate-180!': expanded}" />
@@ -697,7 +767,7 @@
                                         >
                                         <div class="overflow-hidden">
                                             <p class="px-4 pb-3">
-                                                Yes. Rayah allows you to fully customize your branding, including your website design and overall visual identity.
+                                                <span data-i18n="home.faq.items.item6.answer">Yes. Rayah allows you to fully customize your branding, including your website design and overall visual identity.</span>
                                             </p>
                                         </div>
                                     </div>
@@ -712,7 +782,7 @@
                                             :aria-expanded="expanded"
                                             aria-controls="faqs-text-05"
                                         >
-                                            <span>Does Rayah support delivery integrations?</span>
+                                            <span data-i18n="home.faq.items.item7.question">Does Rayah support delivery integrations?</span>
                                             <svg class="fill-zinc-400 shrink-0 ml-8" width="12" height="12" xmlns="http://www.w3.org/2000/svg">
                                                 <rect y="5" width="12" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'rotate-180!': expanded}" />
                                                 <rect y="5" width="12" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'rotate-180!': expanded}" />
@@ -728,7 +798,7 @@
                                         >
                                         <div class="overflow-hidden">
                                             <p class="px-4 pb-3">
-                                                Yes. You can connect with third-party delivery services to automate and manage order deliveries.
+                                                <span data-i18n="home.faq.items.item7.answer">Yes. You can connect with third-party delivery services to automate and manage order deliveries.</span>
                                             </p>
                                         </div>
                                     </div>
@@ -743,7 +813,7 @@
                                             :aria-expanded="expanded"
                                             aria-controls="faqs-text-05"
                                         >
-                                            <span>Is Rayah suitable for small restaurants or only large chains?</span>
+                                            <span data-i18n="home.faq.items.item8.question">Is Rayah suitable for small restaurants or only large chains?</span>
                                             <svg class="fill-zinc-400 shrink-0 ml-8" width="12" height="12" xmlns="http://www.w3.org/2000/svg">
                                                 <rect y="5" width="12" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'rotate-180!': expanded}" />
                                                 <rect y="5" width="12" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'rotate-180!': expanded}" />
@@ -759,7 +829,7 @@
                                         >
                                         <div class="overflow-hidden">
                                             <p class="px-4 pb-3">
-                                                Rayah is designed to scale, making it suitable for single-location restaurants as well as large multi-branch chains.
+                                                <span data-i18n="home.faq.items.item8.answer">Rayah is designed to scale, making it suitable for single-location restaurants as well as large multi-branch chains.</span>
                                             </p>
                                         </div>
                                     </div>
@@ -781,26 +851,26 @@
                         <div class="relative max-w-3xl mx-auto text-center pb-12 md:pb-16">
                             <div class="inline-flex items-center justify-center w-20 h-20 bg-white rounded-xl shadow-md mb-8 relative before:absolute before:-top-12 before:w-52 before:h-52 before:bg-zinc-900 before:opacity-[.08] before:rounded-full before:blur-3xl before:-z-10">
                                 <a href="index.html">
-                                    <img src="./images/logo.png" width="60" height="60" alt="Logo">
+                                    <img src="./images/logo.png" width="60" height="60" alt="Logo" data-i18n-attr="alt:common.logoAlt">
                                 </a>
                             </div>
-                            <h2 class="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Ready to Transform Your
+                            <h2 class="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4"><span data-i18n="home.cta.titleStart">Ready to Transform Your</span>
                                 <em class="relative not-italic inline-flex justify-center items-end">
-                                    Restaurant
+                                    <span data-i18n="home.cta.titleEmphasis">Restaurant</span>
                                     <svg class="absolute fill-zinc-300 w-[calc(100%+1rem)] -z-10" xmlns="http://www.w3.org/2000/svg" width="120" height="10" viewBox="0 0 120 10" aria-hidden="true" preserveAspectRatio="none">
                                         <path d="M118.273 6.09C79.243 4.558 40.297 5.459 1.305 9.034c-1.507.13-1.742-1.521-.199-1.81C39.81-.228 79.647-1.568 118.443 4.2c1.63.233 1.377 1.943-.17 1.89Z" />
                                     </svg>
                                 </em>
-                                Operations?
+                                <span data-i18n="home.cta.titleEnd">Operations?</span>
                             </h2>
-                            <p class="text-lg text-zinc-500 mb-8">Join restaurants that are simplifying operations and boosting online sales with Rayah.
+                            <p class="text-lg text-zinc-500 mb-8" data-i18n="home.cta.description">Join restaurants that are simplifying operations and boosting online sales with Rayah.
                             </p>
                             <div class="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                                 <div>
-                                    <a class="btn text-zinc-100 bg-rayah-primary-600 hover:bg-zinc-800 w-full shadow-sm" href="request-demo.html">Request Demo</a>
+                                    <a class="btn text-zinc-100 bg-rayah-primary-600 hover:bg-rayah-primary-100 hover:text-white w-full shadow-sm" href="request-demo.html" data-i18n="common.nav.requestDemo">Request Demo</a>
                                 </div>
                                 <div>
-                                    <a class="btn text-zinc-600 bg-white hover:text-zinc-900 w-full shadow-sm" href="#0">Try for Free</a>
+                                    <a class="btn text-zinc-600 bg-white hover:text-zinc-900 w-full shadow-sm" href="#0" data-i18n="common.cta.tryFree">Try for Free</a>
                                 </div>
                             </div>
                         </div>
@@ -857,28 +927,28 @@
                         <div class="mb-4">
                             <!-- Logo -->
                             <a class="flex items-center justify-center bg-white w-8 h-8 rounded-sm shadow-xs shadow-zinc-950/20" href="index.html">
-                                <img src="./images/logo.png" width="24" height="24" alt="Logo">
+                                <img src="./images/logo.png" width="24" height="24" alt="Logo" data-i18n-attr="alt:common.logoAlt">
                             </a>
                         </div>
-                        <div class="grow text-sm text-zinc-500">&copy; RAYAH. All rights reserved.</div>
+                        <div class="grow text-sm text-zinc-500" data-i18n="common.footer.copyrightHome">&copy; RAYAH. All rights reserved.</div>
                         <!-- Social links -->
                         <ul class="flex space-x-4 mt-4 mb-1">
                             <li>
-                                <a class="flex justify-center items-center text-zinc-700 hover:text-zinc-900 transition" href="#0" aria-label="Twitter">
+                                <a class="flex justify-center items-center text-zinc-700 hover:text-zinc-900 transition" href="#0" aria-label="Twitter" data-i18n-attr="aria-label:common.social.twitter">
                                     <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                                         <path d="m7.063 3 3.495 4.475L14.601 3h2.454l-5.359 5.931L18 17h-4.938l-3.866-4.893L4.771 17H2.316l5.735-6.342L2 3h5.063Zm-.74 1.347H4.866l8.875 11.232h1.36L6.323 4.347Z" />
                                     </svg>
                                 </a>
                             </li>
                             <li>
-                                <a class="flex justify-center items-center text-zinc-700 hover:text-zinc-900 transition" href="#0" aria-label="Medium">
+                                <a class="flex justify-center items-center text-zinc-700 hover:text-zinc-900 transition" href="#0" aria-label="Medium" data-i18n-attr="aria-label:common.social.medium">
                                     <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                                         <path d="M17 2H3a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1Zm-1.708 3.791-.858.823a.251.251 0 0 0-.1.241V12.9a.251.251 0 0 0 .1.241l.838.823v.181h-4.215v-.181l.868-.843c.085-.085.085-.11.085-.241V7.993L9.6 14.124h-.329l-2.81-6.13V12.1a.567.567 0 0 0 .156.472l1.129 1.37v.181h-3.2v-.181l1.129-1.37a.547.547 0 0 0 .146-.472V7.351A.416.416 0 0 0 5.683 7l-1-1.209V5.61H7.8l2.4 5.283 2.122-5.283h2.971l-.001.181Z" />
                                     </svg>
                                 </a>
                             </li>
                             <li>
-                                <a class="flex justify-center items-center text-zinc-700 hover:text-zinc-900 transition" href="#0" aria-label="Telegram">
+                                <a class="flex justify-center items-center text-zinc-700 hover:text-zinc-900 transition" href="#0" aria-label="Telegram" data-i18n-attr="aria-label:common.social.telegram">
                                     <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                                         <path d="M17.968 3.276a.338.338 0 0 0-.232-.253 1.192 1.192 0 0 0-.63.045S3.087 8.106 2.286 8.664c-.172.121-.23.19-.259.272-.138.4.293.573.293.573l3.613 1.177a.388.388 0 0 0 .183-.011c.822-.519 8.27-5.222 8.7-5.38.068-.02.118 0 .1.049-.172.6-6.606 6.319-6.64 6.354a.138.138 0 0 0-.05.118l-.337 3.528s-.142 1.1.956 0a30.66 30.66 0 0 1 1.9-1.738c1.242.858 2.58 1.806 3.156 2.3a1 1 0 0 0 .732.283.825.825 0 0 0 .7-.622S17.894 5.292 17.98 3.909c.008-.135.021-.217.021-.317a1.177 1.177 0 0 0-.032-.316Z" />
                                     </svg>
@@ -889,42 +959,42 @@
 
                     <!-- 2nd block -->
                     <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
-                        <h6 class="text-sm text-zinc-800 font-medium mb-2">Explore</h6>
+                        <h6 class="text-sm text-zinc-800 font-medium mb-2" data-i18n="common.footer.explore">Explore</h6>
                         <ul class="text-sm space-y-2">
                             <li>
-                                <a class="text-zinc-500 hover:text-zinc-900 transition" href="index.html">Home</a>
+                                <a class="text-zinc-500 hover:text-zinc-900 transition" href="index.html" data-i18n="common.footer.home">Home</a>
                             </li>
                             <li>
-                                <a class="text-zinc-500 hover:text-zinc-900 transition" href="#0">Contact Us</a>
+                                <a class="text-zinc-500 hover:text-zinc-900 transition" href="#0" data-i18n="common.footer.contactUs">Contact Us</a>
                             </li>
                             <li>
-                                <a class="text-zinc-500 hover:text-zinc-900 transition" href="#0">About Us</a>
+                                <a class="text-zinc-500 hover:text-zinc-900 transition" href="#0" data-i18n="common.footer.aboutUs">About Us</a>
                             </li>
                         </ul>
                     </div>
 
                     <!-- 3rd block -->
                     <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
-                        <h6 class="text-sm text-zinc-800 font-medium mb-2">Get Started</h6>
+                        <h6 class="text-sm text-zinc-800 font-medium mb-2" data-i18n="common.footer.getStarted">Get Started</h6>
                         <ul class="text-sm space-y-2">
                             <li>
-                                <a class="text-zinc-500 hover:text-zinc-900 transition" href="request-demo.html">Request Demo</a>
+                                <a class="text-zinc-500 hover:text-zinc-900 transition" href="request-demo.html" data-i18n="common.nav.requestDemo">Request Demo</a>
                             </li>
                             <li>
-                                <a class="text-zinc-500 hover:text-zinc-900 transition" href="login.html">Sign In</a>
+                                <a class="text-zinc-500 hover:text-zinc-900 transition" href="login.html" data-i18n="common.footer.signIn">Sign In</a>
                             </li>
                         </ul>
                     </div>
 
                     <!-- 4th block -->
                     <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
-                        <h6 class="text-sm text-zinc-800 font-medium mb-2">Legal</h6>
+                        <h6 class="text-sm text-zinc-800 font-medium mb-2" data-i18n="common.footer.legal">Legal</h6>
                         <ul class="text-sm space-y-2">
                             <li>
-                                <a class="text-zinc-500 hover:text-zinc-900 transition" href="#0">Terms & Conditions</a>
+                                <a class="text-zinc-500 hover:text-zinc-900 transition" href="#0" data-i18n="common.footer.termsAndConditions">Terms & Conditions</a>
                             </li>
                             <li>
-                                <a class="text-zinc-500 hover:text-zinc-900 transition" href="#0">Privacy Policy</a>
+                                <a class="text-zinc-500 hover:text-zinc-900 transition" href="#0" data-i18n="common.footer.privacyPolicy">Privacy Policy</a>
                             </li>
                         </ul>
                     </div>
@@ -937,6 +1007,7 @@
     </div>
 
     <script src="./js/vendors/alpinejs.min.js" defer></script>
+    <script src="./locales/locales.js"></script>
     <script src="./js/main.js"></script>
 
 </body>
