@@ -7,7 +7,9 @@
   "license": "https://cruip.com/terms/",
   "scripts": {
     "dev": "npx @tailwindcss/cli -i ./css/style.css -o ./style.css --watch",
-    "build": "npx @tailwindcss/cli -i ./css/style.css -o ./style.css"
+    "build": "npx @tailwindcss/cli -i ./css/style.css -o ./style.css",
+    "sync-locales": "node ./sync-locales.mjs",
+    "sync-layout": "node ./sync-shared-layout.mjs"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",

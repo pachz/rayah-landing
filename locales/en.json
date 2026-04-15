@@ -115,7 +115,7 @@
           "description": "Automatically send orders to delivery partners and track status updates without manual coordination."
         },
         "analytics": {
-          "title": "Analytics &amp; Tracking",
+          "title": "Analytics and Tracking",
           "description": "Connect with analytics tools to monitor performance, customer behavior, and business growth."
         }
       },
@@ -168,7 +168,8 @@
   "common": {
     "nav": {
       "login": "Log in",
-      "requestDemo": "Request Demo"
+      "requestDemo": "Request Demo",
+      "joinNow": "Join Now"
     },
     "cta": {
       "tryFree": "Try for Free"
@@ -247,7 +248,7 @@
     },
     "hero": {
       "title": "Get started with Rayah",
-      "description": "Talk to an expert about your requirements, needs, and timeline. Complete the form and we'll make sure to reach out."
+      "description": "For demo requests, partnership opportunities, or any other inquiries, we warmly invite you to reach out to us via email. Our team will review your message promptly and get back to you with the information and support you need."
     },
     "form": {
       "fullNameLabel": "Full Name",

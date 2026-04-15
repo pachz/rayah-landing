@@ -35,14 +35,6 @@ const getLocaleFilePaths = (language) => [
 ];
 
 const loadLocale = async (language) => {
-  if (
-    window.RAYAH_LOCALES &&
-    Object.prototype.hasOwnProperty.call(window.RAYAH_LOCALES, language)
-  ) {
-    cachedLocales[language] = window.RAYAH_LOCALES[language];
-    return cachedLocales[language];
-  }
-
   if (cachedLocales[language]) {
     return cachedLocales[language];
   }
@@ -57,6 +49,14 @@ const loadLocale = async (language) => {
     } catch (_) {
       // try next path
     }
+  }
+
+  if (
+    window.RAYAH_LOCALES &&
+    Object.prototype.hasOwnProperty.call(window.RAYAH_LOCALES, language)
+  ) {
+    cachedLocales[language] = window.RAYAH_LOCALES[language];
+    return cachedLocales[language];
   }
 
   throw new Error(`Unable to load locale file for "${language}"`);
@@ -152,6 +152,43 @@ const updateLanguageButtons = (language) => {
   });
 };
 
+const SHARED_PARTIAL_TO_LAYOUT_KEY = {
+  "./partials/navbar.html": "navbar",
+  "./partials/footer.html": "footer",
+};
+
+const getSharedLayoutHtml = (path) => {
+  const key = SHARED_PARTIAL_TO_LAYOUT_KEY[path];
+  if (!key) return "";
+  const sharedLayout = window.RAYAH_SHARED_LAYOUT || {};
+  return sharedLayout[key] || "";
+};
+
+const loadSharedPartials = async () => {
+  const placeholders = Array.from(document.querySelectorAll("[data-shared-partial]"));
+
+  await Promise.all(
+    placeholders.map(async (placeholder) => {
+      const path = placeholder.getAttribute("data-shared-partial");
+      if (!path) return;
+
+      try {
+        const response = await fetch(path, { cache: "no-store" });
+        if (!response.ok) throw new Error(`Failed to load ${path}`);
+        const html = await response.text();
+        placeholder.outerHTML = html;
+      } catch (error) {
+        const fallbackHtml = getSharedLayoutHtml(path);
+        if (fallbackHtml) {
+          placeholder.outerHTML = fallbackHtml;
+          return;
+        }
+        console.error("Unable to load shared partial:", error);
+      }
+    })
+  );
+};
+
 const applyLanguage = async (language) => {
   const normalizedLanguage = SUPPORTED_LANGUAGES.includes(language) ? language : DEFAULT_LANGUAGE;
   window.localStorage.setItem(STORAGE_KEY, normalizedLanguage);
@@ -182,6 +219,7 @@ const registerLanguageSwitches = () => {
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
+  await loadSharedPartials();
   registerLanguageSwitches();
   await applyLanguage(getInitialLanguage());
 });
